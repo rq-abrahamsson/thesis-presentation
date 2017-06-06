@@ -4,7 +4,6 @@
 #+DATE: Examiner: Ola Leifler, Supervisor: Lena Buffoni
 
 #+REVEAL_ROOT: file:///Users/robin.abrahamsson/reveal.js-master/
-#+REVEAL_PLUGINS: (notes)
 
 #+REVEAL_THEME: black
 #+REVEAL_TRANS: default
