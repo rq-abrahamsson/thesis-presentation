@@ -1,9 +1,23 @@
 .slide-number {
   font-size: 1.6em !important;
   color: white !important;
-  opacity: 0.7 !important; 
+  opacity: 0.7 !important;
 }
 
 .progress span {
   background: white !important;
+}
+
+.reveal .slides section .fragment.current-visible.visible {
+  opacity: 0.5 !important;
+  visibility: visible !important;
+}
+
+.reveal .slides section .fragment.current-visible.visible.current-fragment {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.current-fragment {
+  opacity: 1 !important;
 }

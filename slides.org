@@ -7,6 +7,7 @@
 
 #+REVEAL_THEME: black
 #+REVEAL_TRANS: default
+#+REVEAL_DEFAULT_FRAG_STYLE: current-visible
 
 #+REVEAL_POSTAMBLE: <p> Created by Robin Abrahamsson and David Berntsen. </p>
 #+REVEAL_PLUGINS: (markdown notes)
@@ -28,5 +29,25 @@
 * Result
 * Discussion
 * Summary
+** Research Questions
+   #+ATTR_REVEAL: :frag (t)
+   1. Is modifiability a quality attribute that can be calculated to assist in the choice of two implementation solutions for mobile applications?
+   2. How can information about releases of the platforms be quantified to understand the possible impact on modifiability?
+
+** Summary
+  #+ATTR_REVEAL: :frag (t)
+  * Existing Android and iOS applications
+  * Developed React Native application
+  * SQMMA
+  * Static Analyzers
+  * Modifiability over time
 * Conclusion
+  #+ATTR_REVEAL: :frag (t)
+  * Platform stability
+  * More data needed
+  * Modifiability
 * Future work
+  #+ATTR_REVEAL: :frag (t)
+  * Extend current codebase
+  * Static analyzers
+  * Metric evaluation
