@@ -9,7 +9,7 @@
 #+REVEAL_TRANS: default
 
 #+REVEAL_POSTAMBLE: <p> Created by Robin Abrahamsson and David Berntsen. </p>
-#+REVEAL_PLUGINS: (markdown notes)
+#+REVEAL_PLUGINS: (markdown notes math)
 #+REVEAL_EXTRA_CSS: ./custom-stylesheet.css
 
 #+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:nil
@@ -18,9 +18,48 @@
 #+OPTIONS: toc:1
 #+OPTIONS: reveal_title_slide:"<h2>%t</h2><p>%a</p><p>%d</p>"
 
+
 * Background
 
 #+BEGIN_NOTES
-  Enter speaker notes here.
+
 #+END_NOTES
-* 
+** Research questions
+
+#+ATTR_REVEAL: :frag (current-visible)
+ * How can modifiability be used to understand the maturity of a codebase?
+ * How can information about releases be quantified to understand impact on modifiability?
+
+** Mobile applications
+#+ATTR_REVEAL: :frag (current-visible)
+ * Native applications
+ * Web applications
+ * Hybrid applications
+
+** React Native
+
+
+** SQMMA and modifiability
+#+ATTR_REVEAL: :frag appear
+ * avgSize
+ * Communication
+ * Coupling
+ * EntExt
+ * Hierarchies
+ * LCohesion
+ * MethodInheri
+ * Nesting
+ * Polymorph
+ * Subclasses
+
+
+* Done
+** Extra slide, modifiability formula 
+$\text{Modifiability} = 
+\\ 0.42\cdot(-0.19\cdot \text{Subclasses}
+\\ -0.21\cdot \text{Coupling}-0.2\cdot \text{Hierarchies}
+\\ -0.18 \cdot \text{EntExt}-0.21\cdot \text{Communication})
+\\ +0.58\cdot (-0.13\cdot \text{avgSize}
+\\ -016\cdot \text{Nesting}-0.16\cdot \text{Coupling}
+\\ -0.13\cdot \text{LCohesion}-0.15\cdot \text{Heirarchies}
+\\ -0.13\cdot \text{Polymorph}-0.14\cdot \text{MethodInheri})$
