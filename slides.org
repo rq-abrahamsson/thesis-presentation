@@ -15,7 +15,7 @@
 #+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
 #+OPTIONS: reveal_width:1200 reveal_height:800
 #+OPTIONS: toc:1
-#+OPTIONS: reveal_title_slide:"<h1>%t</h1><p>%a</p><p>%d</p>"
+#+OPTIONS: reveal_title_slide:"<h2>%t</h2><p>%a</p><p>%d</p>"
 
 * Background
 
