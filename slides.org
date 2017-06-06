@@ -3,7 +3,7 @@
 #+EMAIL: robab960@student.liu.se davbe067@student.liu.se
 #+DATE: Examiner: Ola Leifler, Supervisor: Lena Buffoni
 
-#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+REVEAL_ROOT: file:///Users/robin.abrahamsson/reveal.js-master/
 #+REVEAL_PLUGINS: (notes)
 
 #+REVEAL_THEME: black
