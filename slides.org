@@ -5,6 +5,7 @@
 
 #+REVEAL_ROOT: file:///Users/robin.abrahamsson/reveal.js-master/
 
+
 #+REVEAL_THEME: black
 #+REVEAL_TRANS: default
 #+REVEAL_DEFAULT_FRAG_STYLE: current-visible
@@ -146,13 +147,3 @@ with open(file_path, 'r') as f:
   * Metric evaluation
 
 * Thanks for listening!
-** Extra slide, modifiability formula
-$\text{Modifiability} =
-\\ 0.42\cdot(-0.19\cdot \text{Subclasses}
-\\ -0.21\cdot \text{Coupling}-0.2\cdot \text{Hierarchies}
-\\ -0.18 \cdot \text{EntExt}-0.21\cdot \text{Communication})
-\\ +0.58\cdot (-0.13\cdot \text{avgSize}
-\\ -016\cdot \text{Nesting}-0.16\cdot \text{Coupling}
-\\ -0.13\cdot \text{LCohesion}-0.15\cdot \text{Heirarchies}
-\\ -0.13\cdot \text{Polymorph}-0.14\cdot \text{MethodInheri})$
-#+ATTR_REVEAL_EXTRA: :reveal_progress nil
