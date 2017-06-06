@@ -22,21 +22,45 @@
 
 
 * Background
-
 #+BEGIN_NOTES
+ * 2 billion smartphones
+ * Android significant worldwide
+ * iOS United states
 
+ * Duplicate code, especially
+ * Difference in syntax, test suites, packages. Sharing of code not really possible
+  
+ * Evaluate migrating, modifiability
+ * Working hypothesis, improve
+ * Additional factors, have impact. API changes. OS, components, framework language.
 #+END_NOTES
 ** Research questions
    #+ATTR_REVEAL: :frag (t)
   * Is modifiability a quality attribute that can be calculated to assist in the choice of two implementation solutions for mobile applications?
   * How can information about releases of the platforms be quantified to understand the possible impact on modifiability?
-
+   #+BEGIN_NOTES
+   Based on the hypothesis the following research questions were produced:
+   * Is modifiability a quality attribute that can be calculated to assist in the choice of two implementation solutions for mobile applications?
+   * How can information about releases of the platforms be quantified to understand the possible impact on modifiability?
+   #+END_NOTES
 * Concepts
 ** Mobile applications
    #+ATTR_REVEAL: :frag (t)
  * Native applications
  * Web applications
  * Hybrid applications
+   #+BEGIN_NOTES
+ * There are essentially three different kinds of mobile applications; native, web and hybrid applications.
+ * NATIVE, specific platform. 
+ * Access to device specific.
+ * Platform specific language
+ * iOS in Objective-c or Swift, Android Java
+ * WEB, HTML, CSS, JavaScript. Web browser.
+ * Lack acces to low level features. graphics, offline.
+ * HYBRID, installed like native
+ * HTML, CSS, JavaScript, native container WebView.
+ * Access device specific.
+   #+END_NOTES
 ** React Native
 ** SQMMA and modifiability
    #+ATTR_REVEAL: :frag appear
