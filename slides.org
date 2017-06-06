@@ -52,10 +52,19 @@
  * Subclasses
 
 * Our work
-
 ** Data from release cycles
 ** The applications
-   
+   #+REVEAL: split
+   #+CAPTION:
+   #+NAME: fig:menu
+   #+ATTR_HTML: :height 500
+   [[./images/full-application.png]]
+
+   #+REVEAL: split
+   #+CAPTION:
+   #+NAME: fig:menu
+   #+ATTR_HTML: :height 500
+   [[./images/menu.png]]
 
 ** Static analyzers
 
