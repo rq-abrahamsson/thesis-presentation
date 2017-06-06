@@ -26,20 +26,19 @@
 
 #+END_NOTES
 ** Research questions
-
-   #+ATTR_REVEAL: :frag (current-visible)
+   #+ATTR_REVEAL: :frag (t)
   * Is modifiability a quality attribute that can be calculated to assist in the choice of two implementation solutions for mobile applications?
   * How can information about releases of the platforms be quantified to understand the possible impact on modifiability?
 
 * Concepts
 ** Mobile applications
-#+ATTR_REVEAL: :frag (current-visible)
+   #+ATTR_REVEAL: :frag (t)
  * Native applications
  * Web applications
  * Hybrid applications
 ** React Native
 ** SQMMA and modifiability
-#+ATTR_REVEAL: :frag appear
+   #+ATTR_REVEAL: :frag appear
  * avgSize
  * Communication
  * Coupling
@@ -52,6 +51,49 @@
  * Subclasses
 
 * Our work
+** Data from release cycles
+** The applications
+   #+REVEAL: split
+   #+CAPTION:
+   #+NAME: fig:menu
+   #+ATTR_HTML: :height 500
+   [[./images/full-application.png]]
+
+   #+REVEAL: split
+   #+CAPTION:
+   #+NAME: fig:menu
+   #+ATTR_HTML: :height 500
+   [[./images/menu.png]]
+
+** Static analyzers
+
+#+REVEAL: split
+#+BEGIN_SRC python
+effCoupling = 0
+with open(file_name, 'r') as f:
+    s = f.read()
+    matches = re.findall('import.*\.\/.*\;',s)
+    effCoupling = len(matches)
+
+import_regexp = "import.*" + class_name + "\'*\;"
+try:
+    affCoupling = len(sh.grep("-r", import_regexp, "src", "index.android.js", "index.ios.js")
+    .splitlines())
+except:
+    affCoupling = 0
+coupling = affCoupling + effCoupling
+#+END_SRC
+#+REVEAL: split
+#+BEGIN_SRC python
+nrMethods = 0
+methods = []
+with open(file_path, 'r') as f:
+    s = f.read()
+    regex_matches = re.findall('[-+] \(.*',s)
+    for match in regex_matches:
+        methods.append(match[match.find(')')+1:match.find(':')])
+    nrMethods = len(methods)
+#+END_SRC
 
 * Results & Discussion
 ** Platform stability
@@ -69,11 +111,11 @@
    
    #+REVEAL: split
    #+ATTR_HTML: :height 500
-   [[./application-modifiability-sum.png]]
+   [[./images/application-modifiability-sum.png]]
 
    #+REVEAL: split
    #+ATTR_HTML: :height 500
-   [[./application-modifiability-avg.png]]
+   [[./images/application-modifiability-avg.png]]
 
 
 * Summary
