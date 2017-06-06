@@ -7,6 +7,7 @@
 
 #+REVEAL_THEME: black
 #+REVEAL_TRANS: default
+#+REVEAL_DEFAULT_FRAG_STYLE: current-visible
 
 #+REVEAL_POSTAMBLE: <p> Created by Robin Abrahamsson and David Berntsen. </p>
 #+REVEAL_PLUGINS: (markdown notes math)
@@ -30,15 +31,13 @@
  * How can modifiability be used to understand the maturity of a codebase?
  * How can information about releases be quantified to understand impact on modifiability?
 
+* Concepts
 ** Mobile applications
 #+ATTR_REVEAL: :frag (current-visible)
  * Native applications
  * Web applications
  * Hybrid applications
-
 ** React Native
-
-
 ** SQMMA and modifiability
 #+ATTR_REVEAL: :frag appear
  * avgSize
@@ -51,16 +50,35 @@
  * Nesting
  * Polymorph
  * Subclasses
- 
 
-* Concepts
 * Our work
+
+
 * Result
 * Discussion
 * Summary
-* Conclusion
-* Future work
+** Research Questions
+   #+ATTR_REVEAL: :frag (t)
+   1. Is modifiability a quality attribute that can be calculated to assist in the choice of two implementation solutions for mobile applications?
+   2. How can information about releases of the platforms be quantified to understand the possible impact on modifiability?
 
+** Summary
+  #+ATTR_REVEAL: :frag (t)
+  * Existing Android and iOS applications
+  * Developed React Native application
+  * SQMMA
+  * Static Analyzers
+  * Modifiability over time
+* Conclusion
+  #+ATTR_REVEAL: :frag (t)
+  * Platform stability
+  * More data needed
+  * Modifiability
+* Future work
+  #+ATTR_REVEAL: :frag (t)
+  * Extend current codebase
+  * Static analyzers
+  * Metric evaluation
 
 * Done
 ** Extra slide, modifiability formula 
