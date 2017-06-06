@@ -27,9 +27,9 @@
 #+END_NOTES
 ** Research questions
 
-#+ATTR_REVEAL: :frag (current-visible)
- * How can modifiability be used to understand the maturity of a codebase?
- * How can information about releases be quantified to understand impact on modifiability?
+   #+ATTR_REVEAL: :frag (current-visible)
+  * Is modifiability a quality attribute that can be calculated to assist in the choice of two implementation solutions for mobile applications?
+  * How can information about releases of the platforms be quantified to understand the possible impact on modifiability?
 
 * Concepts
 ** Mobile applications
@@ -53,9 +53,28 @@
 
 * Our work
 
+* Results & Discussion
+** Platform stability
+|---+---------------------+--------------+------+---------|
+|   | Average values of   | React Native |  iOS | Android |
+|---+---------------------+--------------+------+---------|
+| / | >                   |            < |      |         |
+|   | Additions / Day     |         1.61 |   16 |       5 |
+|   | Additions / Release |         26.6 | 1877 |     898 |
+|   | Removals / Day      |         0.13 |    1 |    0.25 |
+|   | Removals / Release  |          2.2 |  109 |      45 |
+|---+---------------------+--------------+------+---------|
 
-* Result
-* Discussion
+** Modifiability
+   
+   #+REVEAL: split
+   #+ATTR_HTML: :height 500
+   [[./application-modifiability-sum.png]]
+
+   #+REVEAL: split
+   #+ATTR_HTML: :height 500
+   [[./application-modifiability-avg.png]]
+
 
 * Summary
   #+ATTR_REVEAL: :frag (t)
@@ -66,8 +85,8 @@
   * Modifiability over time
 ** Research Questions
    #+ATTR_REVEAL: :frag (t)
-   1. Is modifiability a quality attribute that can be calculated to assist in the choice of two implementation solutions for mobile applications?
-   2. How can information about releases of the platforms be quantified to understand the possible impact on modifiability?
+   * Is modifiability a quality attribute that can be calculated to assist in the choice of two implementation solutions for mobile applications?
+   * How can information about releases of the platforms be quantified to understand the possible impact on modifiability?
 
 * Conclusion
   #+ATTR_REVEAL: :frag (t)
@@ -80,9 +99,9 @@
   * Static analyzers
   * Metric evaluation
 
-* Done
-** Extra slide, modifiability formula 
-$\text{Modifiability} = 
+* Thanks for listening!
+** Extra slide, modifiability formula
+$\text{Modifiability} =
 \\ 0.42\cdot(-0.19\cdot \text{Subclasses}
 \\ -0.21\cdot \text{Coupling}-0.2\cdot \text{Hierarchies}
 \\ -0.18 \cdot \text{EntExt}-0.21\cdot \text{Communication})
@@ -90,3 +109,4 @@ $\text{Modifiability} =
 \\ -016\cdot \text{Nesting}-0.16\cdot \text{Coupling}
 \\ -0.13\cdot \text{LCohesion}-0.15\cdot \text{Heirarchies}
 \\ -0.13\cdot \text{Polymorph}-0.14\cdot \text{MethodInheri})$
+#+ATTR_REVEAL_EXTRA: :reveal_progress nil
