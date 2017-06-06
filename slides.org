@@ -13,6 +13,7 @@
 #+REVEAL_PLUGINS: (markdown notes math)
 #+REVEAL_EXTRA_CSS: ./custom-stylesheet.css
 
+#+OPTIONS: reveal_single_file:t
 #+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:nil
 #+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
 #+OPTIONS: reveal_width:1200 reveal_height:800
@@ -26,20 +27,19 @@
 
 #+END_NOTES
 ** Research questions
-
-#+ATTR_REVEAL: :frag (current-visible)
+   #+ATTR_REVEAL: :frag (t)
  * How can modifiability be used to understand the maturity of a codebase?
  * How can information about releases be quantified to understand impact on modifiability?
 
 * Concepts
 ** Mobile applications
-#+ATTR_REVEAL: :frag (current-visible)
+   #+ATTR_REVEAL: :frag (t)
  * Native applications
  * Web applications
  * Hybrid applications
 ** React Native
 ** SQMMA and modifiability
-#+ATTR_REVEAL: :frag appear
+   #+ATTR_REVEAL: :frag appear
  * avgSize
  * Communication
  * Coupling
@@ -53,6 +53,39 @@
 
 * Our work
 
+** Data from release cycles
+** The applications
+   
+
+** Static analyzers
+
+#+REVEAL: split
+#+BEGIN_SRC python
+effCoupling = 0
+with open(file_name, 'r') as f:
+    s = f.read()
+    matches = re.findall('import.*\.\/.*\;',s)
+    effCoupling = len(matches)
+
+import_regexp = "import.*" + class_name + "\'*\;"
+try:
+    affCoupling = len(sh.grep("-r", import_regexp, "src", "index.android.js", "index.ios.js")
+    .splitlines())
+except:
+    affCoupling = 0
+coupling = affCoupling + effCoupling
+#+END_SRC
+#+REVEAL: split
+#+BEGIN_SRC python
+nrMethods = 0
+methods = []
+with open(file_path, 'r') as f:
+    s = f.read()
+    regex_matches = re.findall('[-+] \(.*',s)
+    for match in regex_matches:
+        methods.append(match[match.find(')')+1:match.find(':')])
+    nrMethods = len(methods)
+#+END_SRC
 
 * Result
 * Discussion
