@@ -1,0 +1,21 @@
+#+TITLE: Comparing modifiability of React Native and two native codebases
+#+AUTHOR: Robin Abrahamsson and David Berntsen
+#+EMAIL: robab960@student.liu.se davbe067@student.liu.se
+
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+
+#+REVEAL_THEME: black
+#+REVEAL_TRANS: default
+
+#+REVEAL_POSTAMBLE: <p> Created by Robin Abrahamsson and David Berntsen. </p>
+#+REVEAL_PLUGINS: (markdown notes)
+
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
+#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+OPTIONS: toc:1
+#+OPTIONS: reveal_title_slide:"<h1>%t</h1><h2>%a</h2>"
+
+* Background
+
+* 
