@@ -1,0 +1,9 @@
+.slide-number {
+  font-size: 1.6em !important;
+  color: white !important;
+  opacity: 0.7 !important; 
+}
+
+.progress span {
+  background: white !important;
+}

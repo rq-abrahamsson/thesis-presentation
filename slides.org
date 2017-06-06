@@ -10,6 +10,7 @@
 
 #+REVEAL_POSTAMBLE: <p> Created by Robin Abrahamsson and David Berntsen. </p>
 #+REVEAL_PLUGINS: (markdown notes)
+#+REVEAL_EXTRA_CSS: ./custom-stylesheet.css
 
 #+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:nil
 #+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
