@@ -28,19 +28,19 @@
 * Our work
 * Result
 * Discussion
-* Summary
-** Research Questions
-   #+ATTR_REVEAL: :frag (t)
-   1. Is modifiability a quality attribute that can be calculated to assist in the choice of two implementation solutions for mobile applications?
-   2. How can information about releases of the platforms be quantified to understand the possible impact on modifiability?
 
-** Summary
+* Summary
   #+ATTR_REVEAL: :frag (t)
   * Existing Android and iOS applications
   * Developed React Native application
   * SQMMA
   * Static Analyzers
   * Modifiability over time
+** Research Questions
+   #+ATTR_REVEAL: :frag (t)
+   1. Is modifiability a quality attribute that can be calculated to assist in the choice of two implementation solutions for mobile applications?
+   2. How can information about releases of the platforms be quantified to understand the possible impact on modifiability?
+
 * Conclusion
   #+ATTR_REVEAL: :frag (t)
   * Platform stability
