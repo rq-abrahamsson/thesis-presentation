@@ -30,7 +30,8 @@
  * Duplicate code, especially
  * Difference in syntax, test suites, packages. Sharing of code not really possible
 .  
- * Evaluate migrating, modifiability
+ * From that we started to look for a way to evaluate if migrating is 
+ a good decision, to help this decision we looked at modifiability
  * Working hypothesis, improve
  * Additional factors, have impact. API changes. OS, components, framework language.
 #+END_NOTES
@@ -70,7 +71,7 @@
      * JavaScript
      * To native components and therefore resulting applications are native.
    #+END_NOTES
-** SQMMA
+** SQMMA (Software Quality Model for Maintainability Analysis)
    #+ATTR_REVEAL: :frag (t)
  * Analysability
  * Modifiability
