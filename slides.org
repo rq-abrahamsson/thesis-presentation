@@ -23,17 +23,16 @@
 
 * Background
 #+BEGIN_NOTES
- * 2 billion smartphones
- * Android significant worldwide
- * Entire market -> applications on all platforms
-.
- * Duplicate code, especially
- * Difference in syntax, test suites, packages. Sharing of code not really possible
-.  
- * From that we started to look for a way to evaluate if migrating is 
- a good decision, to help this decision we looked at modifiability
- * Working hypothesis, improve
- * Additional factors, have impact. API changes. OS, components, framework language.
+ * 2 billion smartphones different operating systems.
+  * Android significant to end users worldwide, iOS large in USA.
+  * Company entire market -> applications on all platforms
+
+ * Creating native, duplicate code, especially basic functionality
+  * Difference in syntax, test suites, packages. Sharing of code not really possible
+  
+ * From that we started to look for a way to evaluate if migrating is a good decision, to help this decision we looked at modifiability
+  * Working hypothesis, that modifiability will improve
+  * Additional factors, have impact. API changes. OS, components, new versions framework language.
 #+END_NOTES
 ** Research questions
    #+ATTR_REVEAL: :frag (t)
@@ -52,23 +51,23 @@
  * Hybrid applications
    #+BEGIN_NOTES
  * There are essentially three different kinds of mobile applications; native, web and hybrid applications.
- * NATIVE, specific platform. 
- * Access to device specific.
- * Platform specific language
- * iOS in Objective-c or Swift, Android Java
-.
+ * NATIVE, specific platform or device. Installed 
+  * Access to device specific, GPS or Camera.
+  * Platform specific language
+  * iOS in Objective-c or Swift, Android Java
+
  * WEB, HTML, CSS, JavaScript. Web browser.
- * Lack acces to low level features. graphics, offline.
-. 
+  * Lack acces to low level features. graphics, offline.
+ 
  * HYBRID, installed like native
- * HTML, CSS, JavaScript, native container WebView.
- * Access device specific.
+  * HTML, CSS, JavaScript. Displayed in native container hosting a WebView.
+  * Access device specific.
    #+END_NOTES
 ** React Native
    #+BEGIN_NOTES
      * Open source by Facebook.
-     * March 2015
-     * JavaScript
+     * Released March 2015
+     * Programming language JavaScript
      * To native components and therefore resulting applications are native.
    #+END_NOTES
 ** SQMMA (Software Quality Model for Maintainability Analysis)
@@ -79,23 +78,20 @@
  * Modularity
  * Reusability
    #+BEGIN_NOTES
-   * The Software Quality Model for Maintainability Analysis (SQMMA) quantifies 
-   quality attributes to achieve a value for maintainability. 
-   These quality attributes are:
-   .
-   * Quality attributes quantified by certain metrics.
-   * Metrics are then weighted depending on the impoct of that quality attribute.
-   * Modifiability was chosen for this thesi.
+   * The Software Quality Model for Maintainability Analysis (SQMMA) quantifies quality attributes to achieve a value for maintainability. 
+   These quality attributes are: *list on slide*
+   
+   Each quality attribute is in turn quantified by certain metrics. These metrics are then weighted depending on the impact of that quality attribute. For this thesis one of these quality attributes was chosen to focus on,  which was modifiability. The metrics that was used to quantify modifiability is
    #+END_NOTES
 ** Modifiability
    #+ATTR_REVEAL: :frag (t)
- * avgSize
+ * Average Size
  * Communication
  * Coupling
- * EntExt
+ * Entry Exit 
  * Hierarchies
- * LCohesion
- * MethodInheri
+ * Lack of Cohesion
+ * Method Inheritance
  * Nesting
  * Polymorph
  * Subclasses
@@ -105,15 +101,16 @@
 * Our work
 ** Data from release cycles
    #+BEGIN_NOTES
-   * Different release cycles, time effort
+   * Different release cycles, affect how much time and effort
    * Change a function call, to deprecate and kill functionality
    * Data about releases were gathered for iOS, Android and React Native.
    #+END_NOTES
 ** The applications
    #+BEGIN_NOTES
-   * First question, two applications Valtech.
-   * General functionality
+   * First question, provided two applications Valtech. One for..
+   * General functionality of applications.
    * what graphical components, 6 -> Navbar, Menu, List view
+   * We will show you images of the components.
    .
    After deciding which components should be migrated, 
    the files that were related to the components were 
