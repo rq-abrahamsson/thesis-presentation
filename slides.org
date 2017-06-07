@@ -71,7 +71,8 @@
      * JavaScript
      * To native components and therefore resulting applications are native.
    #+END_NOTES
-** SQMMA (Software Quality Model for Maintainability Analysis)
+** SQMMA
+   (Software Quality Model for Maintainability Analysis)
    #+ATTR_REVEAL: :frag (t)
  * Analysability
  * Modifiability
