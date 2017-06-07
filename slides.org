@@ -94,7 +94,7 @@
  * Lack of Cohesion
  * Method Inheritance
  * Nesting
- * Polymorph
+ * Polymorphism
  * Subclasses
    #+BEGIN_NOTES
    * The following metrics was used to quantify modifiability:
@@ -102,9 +102,8 @@
 * Our work
 ** Data from release cycles
    #+BEGIN_NOTES
-   * Different release cycles, affect how much time and effort
-   * Change a function call, to deprecate and kill functionality
-   * Data about releases were gathered for iOS, Android and React Native.
+   For the different operating systems or platforms there are different release cycles that directly affect how much time and effort is needed to stay up-to-date with the current standards. Some releases just change how a function should be called while others can deprecate or kill certain functionality in the application. Data about the releases were gathered for iOS, Android and React Native.
+
    #+END_NOTES
 ** The applications
    #+BEGIN_NOTES
