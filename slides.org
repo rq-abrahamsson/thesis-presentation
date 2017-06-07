@@ -64,6 +64,12 @@
  * Access device specific.
    #+END_NOTES
 ** React Native
+   #+BEGIN_NOTES
+     * Open source by Facebook.
+     * March 2015
+     * JavaScript
+     * To native components and therefore resulting applications are native.
+   #+END_NOTES
 ** SQMMA
    #+ATTR_REVEAL: :frag (t)
  * Analysability
@@ -71,6 +77,15 @@
  * Testability
  * Modularity
  * Reusability
+   #+BEGIN_NOTES
+   * The Software Quality Model for Maintainability Analysis (SQMMA) quantifies 
+   quality attributes to achieve a value for maintainability. 
+   These quality attributes are:
+   .
+   * Quality attributes quantified by certain metrics.
+   * Metrics are then weighted depending on the impoct of that quality attribute.
+   * Modifiability was chosen for this thesi.
+   #+END_NOTES
 ** Modifiability
    #+ATTR_REVEAL: :frag (t)
  * avgSize
@@ -83,10 +98,29 @@
  * Nesting
  * Polymorph
  * Subclasses
-
+   #+BEGIN_NOTES
+   * The following metrics was used to quantify modifiability:
+   #+END_NOTES
 * Our work
 ** Data from release cycles
+   #+BEGIN_NOTES
+   * Different release cycles, time effort
+   * Change a function call, to deprecate and kill functionality
+   * Data about releases were gathered for iOS, Android and React Native.
+   #+END_NOTES
 ** The applications
+   #+BEGIN_NOTES
+   * First question, two applications Valtech.
+   * General functionality
+   * what graphical components, 6 -> Navbar, Menu, List view
+   .
+   After deciding which components should be migrated, 
+   the files that were related to the components were 
+   then located in both the iOS and Android codebases. 
+   With the help of these files, the functionality of 
+   every component was identified and as much functionality 
+   as possible was then migrated to the React Native applications. 
+   #+END_NOTES
    #+REVEAL: split
    #+CAPTION:
    #+NAME: fig:menu
@@ -100,7 +134,14 @@
    [[./images/menu.png]]
 
 ** Static analyzers
-
+#+BEGIN_NOTES
+ * After the migration was done we performed static analyzis to extract metrics
+ * Exist tools, none open source with reliable results
+ * Usually out dated or covered other metrics.
+ * Decided to create analyzers
+ * Python, regexp
+ * Give you an understanding of how the analyzers work, code snippets.
+#+END_NOTES
 #+REVEAL: split
 #+BEGIN_SRC python
 effCoupling = 0
@@ -121,6 +162,12 @@ except:
     affCoupling = 0
 coupling = affCoupling + effCoupling
 #+END_SRC
+#+BEGIN_NOTES
+The first code snippet shows how the coupling value for React Native is extracted.
+Efferent coupling counts the number of imports in the file. Afferent coupling 
+counts the number of times the current class is imported in the rest of the codebase.
+#+END_NOTES
+
 #+REVEAL: split
 #+BEGIN_SRC python
 nrMethods = 0
@@ -132,7 +179,10 @@ with open(file_path, 'r') as f:
         methods.append(match[match.find(')')+1:match.find(':')])
     nrMethods = len(methods)
 #+END_SRC
-
+#+BEGIN_NOTES
+This second code snippet shows the how the number of methods in a class is counted 
+in the iOS codebase.
+#+END_NOTES
 * Results & Discussion
 ** Platform stability
 *** Additions
