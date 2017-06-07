@@ -25,7 +25,7 @@
 #+BEGIN_NOTES
  * 2 billion smartphones
  * Android significant worldwide
- * entire market -> applications on all platforms
+ * Entire market -> applications on all platforms
 .
  * Duplicate code, especially
  * Difference in syntax, test suites, packages. Sharing of code not really possible
