@@ -187,21 +187,21 @@ in the iOS codebase.
 * Results & Discussion
 ** Platform stability
 *** Additions
-|---+---------------+--------------+------+---------|
-|   | Additions per | React Native |  iOS | Android |
-|---+---------------+--------------+------+---------|
-| / | >             |            < |      |         |
-|   | Day           |         1.61 |   16 |       5 |
-|   | Release       |         26.6 | 1877 |     898 |
-|---+---------------+--------------+------+---------|
+|---+---------------+--------------+---------+------|
+|   | Additions per | React Native | Android |  iOS |
+|---+---------------+--------------+---------+------|
+| / | >             |            < |         |      |
+|   | Day           |         1.61 |       5 |   16 |
+|   | Release       |         26.6 |     898 | 1877 |
+|---+---------------+--------------+---------+------|
 *** Removals 
-|---+--------------+--------------+-----+---------|
-|   | Removals per | React Native | iOS | Android |
-|---+--------------+--------------+-----+---------|
-| / | >            |            < |     |         |
-|   | Day          |         0.13 |   1 |    0.25 |
-|   | Release      |          2.2 | 109 |      45 |
-|---+--------------+--------------+-----+---------|
+|---+--------------+--------------+---------+-----|
+|   | Removals per | React Native | Android | iOS |
+|---+--------------+--------------+---------+-----|
+| / | >            |            < |         |     |
+|   | Day          |         0.13 |    0.25 |   1 |
+|   | Release      |          2.2 |      45 | 109 |
+|---+--------------+--------------+---------+-----|
 
 
 
@@ -211,22 +211,18 @@ in the iOS codebase.
    #+ATTR_HTML: :height 500
    [[./images/application-modifiability-sum.png]]
 
-   #+REVEAL: split
-   #+ATTR_HTML: :height 500
-   [[./images/application-modifiability-avg.png]]
 
-
-* Summary
-  #+ATTR_REVEAL: :frag (t)
-  * Existing Android and iOS applications
-  * Developed React Native application
-  * SQMMA
-  * Static Analyzers
-  * Modifiability over time
-** Research Questions
-   #+ATTR_REVEAL: :frag (t)
-   * Is modifiability a quality attribute that can be calculated to assist in the choice of two implementation solutions for mobile applications?
-   * How can information about releases of the platforms be quantified to understand the possible impact on modifiability?
+# * Summary
+#   #+ATTR_REVEAL: :frag (t)
+#   * Existing Android and iOS applications
+#   * Developed React Native application
+#   * SQMMA
+#   * Static Analyzers
+#   * Modifiability over time
+# ** Research Questions
+#    #+ATTR_REVEAL: :frag (t)
+#    * Is modifiability a quality attribute that can be calculated to assist in the choice of two implementation solutions for mobile applications?
+#    * How can information about releases of the platforms be quantified to understand the possible impact on modifiability?
 
 * Conclusion
   #+ATTR_REVEAL: :frag (t)
