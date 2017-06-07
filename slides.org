@@ -37,8 +37,15 @@
  * Web applications
  * Hybrid applications
 ** React Native
-** SQMMA and modifiability
-   #+ATTR_REVEAL: :frag appear
+** SQMMA
+   #+ATTR_REVEAL: :frag (t)
+ * Analysability
+ * Modifiability
+ * Testability
+ * Modularity
+ * Reusability
+** Modifiability
+   #+ATTR_REVEAL: :frag (t)
  * avgSize
  * Communication
  * Coupling
@@ -101,15 +108,24 @@ with open(file_path, 'r') as f:
 
 * Results & Discussion
 ** Platform stability
-|---+---------------------+--------------+------+---------|
-|   | Average values of   | React Native |  iOS | Android |
-|---+---------------------+--------------+------+---------|
-| / | >                   |            < |      |         |
-|   | Additions / Day     |         1.61 |   16 |       5 |
-|   | Additions / Release |         26.6 | 1877 |     898 |
-|   | Removals / Day      |         0.13 |    1 |    0.25 |
-|   | Removals / Release  |          2.2 |  109 |      45 |
-|---+---------------------+--------------+------+---------|
+*** Additions
+|---+---------------+--------------+------+---------|
+|   | Additions per | React Native |  iOS | Android |
+|---+---------------+--------------+------+---------|
+| / | >             |            < |      |         |
+|   | Day           |         1.61 |   16 |       5 |
+|   | Release       |         26.6 | 1877 |     898 |
+|---+---------------+--------------+------+---------|
+*** Removals 
+|---+--------------+--------------+-----+---------|
+|   | Removals per | React Native | iOS | Android |
+|---+--------------+--------------+-----+---------|
+| / | >            |            < |     |         |
+|   | Day          |         0.13 |   1 |    0.25 |
+|   | Release      |          2.2 | 109 |      45 |
+|---+--------------+--------------+-----+---------|
+
+
 
 ** Modifiability
    
