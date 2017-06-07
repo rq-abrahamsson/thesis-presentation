@@ -25,11 +25,11 @@
 #+BEGIN_NOTES
  * 2 billion smartphones
  * Android significant worldwide
- * iOS United states
-
+ * entire market -> applications on all platforms
+.
  * Duplicate code, especially
  * Difference in syntax, test suites, packages. Sharing of code not really possible
-  
+.  
  * Evaluate migrating, modifiability
  * Working hypothesis, improve
  * Additional factors, have impact. API changes. OS, components, framework language.
@@ -55,8 +55,10 @@
  * Access to device specific.
  * Platform specific language
  * iOS in Objective-c or Swift, Android Java
+.
  * WEB, HTML, CSS, JavaScript. Web browser.
  * Lack acces to low level features. graphics, offline.
+. 
  * HYBRID, installed like native
  * HTML, CSS, JavaScript, native container WebView.
  * Access device specific.
