@@ -50,7 +50,7 @@
  * Web applications
  * Hybrid applications
    #+BEGIN_NOTES
- * There are essentially three different kinds of mobile applications; native, web and hybrid applications.
+ * There are essentially three different kinds of mobile applications;
  * NATIVE, specific platform or device. Installed 
   * Access to device specific, GPS or Camera.
   * Platform specific language
