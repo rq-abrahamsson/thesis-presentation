@@ -182,75 +182,79 @@ This second code snippet shows the how the number of methods in a class is count
 in the iOS codebase.
 #+END_NOTES
 * Results & Discussion
+  #+BEGIN_NOTES
+  I'm going to start to talk about platform stability
+  #+END_NOTES
 ** Platform stability
-#+BEGIN_NOTES
- * Release information
- * Different platforms -> different data
- * iOS, Android, React Native 
- * Breaking changes vs Removals 
- * Release cycles
- * Different release cycles -> aggregated data
-#+END_NOTES
+   #+BEGIN_NOTES
+     * Gathered data about release information
+     * Different platforms -> different data about API
+     * iOS, Android, React Native 
+     * Breaking changes vs Removals 
+     * Release cycles
+     * Different release cycles -> aggregated data
+   #+END_NOTES
 
 *** Additions
-|---+---------------+--------------+---------+------|
-|   | Additions per | React Native | Android |  iOS |
-|---+---------------+--------------+---------+------|
-| / | >             |            < |         |      |
-|   | Day           |         1.61 |       5 |   16 |
-|   | Release       |         26.6 |     898 | 1877 |
-|---+---------------+--------------+---------+------|
-#+BEGIN_NOTES
- * Fewer additions
- * Additions -> new features and additional functionality
-#+END_NOTES
+    |---+---------------+--------------+---------+------|
+    |   | Additions per | React Native | Android |  iOS |
+    |---+---------------+--------------+---------+------|
+    | / | >             |            < |         |      |
+    |   | Day           |         1.61 |       5 |   16 |
+    |   | Release       |         26.6 |     898 | 1877 |
+    |---+---------------+--------------+---------+------|
+    #+BEGIN_NOTES
+      * Fewer additions
+      * Additions -> new features and additional functionality
+    #+END_NOTES
 
 
 *** Removals 
-|---+--------------+--------------+---------+-----|
-|   | Removals per | React Native | Android | iOS |
-|---+--------------+--------------+---------+-----|
-| / | >            |            < |         |     |
-|   | Day          |         0.13 |    0.25 |   1 |
-|   | Release      |          2.2 |      45 | 109 |
-|---+--------------+--------------+---------+-----|
-#+BEGIN_NOTES
- * Main focus -> removals
- * Force developer to update code
- * Removals -> Direct impact on existing application
-
-If we look at...
-#+END_NOTES
+    |---+--------------+--------------+---------+-----|
+    |   | Removals per | React Native | Android | iOS |
+    |---+--------------+--------------+---------+-----|
+    | / | >            |            < |         |     |
+    |   | Day          |         0.13 |    0.25 |   1 |
+    |   | Release      |          2.2 |      45 | 109 |
+    |---+--------------+--------------+---------+-----|
+    #+BEGIN_NOTES
+      * Main focus -> removals in the API
+      * Force developer to update code
+      * Removals -> Direct impact on existing application
+      * Fewer removals, twice and eight times when looking per day.
+      * Data -> React Native more stable -> general case
+      * Could be heavily, or not at all affected
+    #+END_NOTES
 
 ** Modifiability
    #+BEGIN_NOTES 
    * migrated parts of existing applications
-   * Calculated modifiability
-   * Over lifetime of codebases
+   * Calculated modifiability, components + application
+   * Corresponding components
+   * Over lifetime of codebases, which gave this result
    #+END_NOTES
    
    #+REVEAL: split
    #+ATTR_HTML: :height 500
    [[./images/application-modifiability-sum.png]]
-#+BEGIN_NOTES
- * Entire application
- * Sum of metric values
- * Corresponding files in native codebases
- * Average values -> approximation of modularity 
- * Compared native vs React Native
+   #+BEGIN_NOTES
+    * Entire application, sum
+    * Corresponding files in native codebases
+    * Average values -> approximation of modularity 
+    * Average and Sum
+    * Two curves -> Compared native vs React Native
+    * SQMMA -> close to 0 
+    * Clear that React Native > native
+    * native modifiability worse -> Graph similarities -> decline rapidly then stabilizes
+    * Modifiability would continue to decline
+    * Short development time
+    * Total size is small
+    * Previous studies -> LOC large factor
 
- * SQMMA -> close to 0 
- * React Native > native
- * Graph similarities -> decline rapidly then stabilizes
+    * LOC not a metric in modifiability, avgLoc is, but modifiability declines more rapidly when LOC increases
 
- * Short development time
- * Total size is small
- * Previous studies -> LOC large factor
-
- * LOC not a metric in modifiability, but modifiability declines more rapidly when LOC increases
-
- * So what are the conclusions of our thesis
-#+END_NOTES
+    * So what are the conclusions of our thesis
+   #+END_NOTES
    
 
 * Conclusion
@@ -266,15 +270,18 @@ If we look at...
  * Calculations like modifiability should be done on a large codebase.
  * Small codebases gives unstable results
  * Drastic change in modifiability by small change in code.
- * With a more mature codebase, easier to see evolution.
+ * With a larger codebase, easier to see evolution.
 #+END_NOTES
   #+ATTR_REVEAL: :frag (t)
   * Platform stability
   * More data needed
-  * Mature codebase
+  * Modifiability more applicable to a large codebase
 * Future work
 #+BEGIN_NOTES
-Future work notes
+ * Continue to develop React Native application then perform the analysis again
+ * Possible if done at Valtech
+ * Make the static analyzers more general so that they can be used on any codebase.
+ * Evaluate metrics in languages.
 #+END_NOTES
 
   #+ATTR_REVEAL: :frag (t)
