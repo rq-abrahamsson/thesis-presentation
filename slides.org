@@ -130,7 +130,7 @@
    #+NAME: fig:menu
    #+ATTR_HTML: :height 500
    [[./images/menu.png]]
-
+   
 ** Static analyzers
 #+BEGIN_NOTES
  * After the migration was done we performed static analyzis to extract metrics
@@ -184,12 +184,12 @@ in the iOS codebase.
 * Results & Discussion
 ** Platform stability
 #+BEGIN_NOTES
-Release information
-Different platforms -> different data
-iOS, Android, React Native 
-Breaking changes vs Removals 
-Release cycles
-Different release cycles -> aggregated data
+ * Release information
+ * Different platforms -> different data
+ * iOS, Android, React Native 
+ * Breaking changes vs Removals 
+ * Release cycles
+ * Different release cycles -> aggregated data
 #+END_NOTES
 
 *** Additions
@@ -201,8 +201,8 @@ Different release cycles -> aggregated data
 |   | Release       |         26.6 |     898 | 1877 |
 |---+---------------+--------------+---------+------|
 #+BEGIN_NOTES
-Fewer additions
-Additions -> new features and additional functionality
+ * Fewer additions
+ * Additions -> new features and additional functionality
 #+END_NOTES
 
 
@@ -215,9 +215,9 @@ Additions -> new features and additional functionality
 |   | Release      |          2.2 |      45 | 109 |
 |---+--------------+--------------+---------+-----|
 #+BEGIN_NOTES
-Main focus -> removals
-Force developer to update code
-Removals -> Direct impact on existing application
+ * Main focus -> removals
+ * Force developer to update code
+ * Removals -> Direct impact on existing application
 
 If we look at...
 #+END_NOTES
@@ -234,40 +234,40 @@ If we look at...
    #+ATTR_HTML: :height 500
    [[./images/application-modifiability-sum.png]]
 #+BEGIN_NOTES
-Entire application
-Sum of metric values
-Corresponding files in native codebases
-Average values -> approximation of modularity 
-Compared native vs React Native
+ * Entire application
+ * Sum of metric values
+ * Corresponding files in native codebases
+ * Average values -> approximation of modularity 
+ * Compared native vs React Native
 
-SQMMA -> close to 0 
-React Native > native
-Graph similarities -> decline rapidly then stabilizes
+ * SQMMA -> close to 0 
+ * React Native > native
+ * Graph similarities -> decline rapidly then stabilizes
 
-Short development time
-Total size is small
-Previous studies -> LOC large factor
+ * Short development time
+ * Total size is small
+ * Previous studies -> LOC large factor
 
-LOC not a metric in modifiability, but modifiability declines more rapidly when LOC increases
+ * LOC not a metric in modifiability, but modifiability declines more rapidly when LOC increases
 
-So what are the conclusions of our thesis
+ * So what are the conclusions of our thesis
 #+END_NOTES
    
 
 * Conclusion
 #+BEGIN_NOTES
-React Native platform more stable for overall changes to API
-Migrate from native to React Native -> Not worry of platform overhead
-Rather have something that performs better
+ * React Native platform more stable for overall changes to API
+ * Migrate from native to React Native -> Not worry of platform overhead
+ * Rather have something that performs better
 
-Data shows -> modifiability better
-Hard to draw conclusions
-More data needed
+ * Data shows -> modifiability better
+ * Hard to draw conclusions
+ * More data needed
 
-Calculations like modifiability should be done on a large codebase.
-Small codebases gives unstable results
-Drastic change in modifiability by small change in code.
-With a more mature codebase, easier to see evolution.
+ * Calculations like modifiability should be done on a large codebase.
+ * Small codebases gives unstable results
+ * Drastic change in modifiability by small change in code.
+ * With a more mature codebase, easier to see evolution.
 #+END_NOTES
   #+ATTR_REVEAL: :frag (t)
   * Platform stability
