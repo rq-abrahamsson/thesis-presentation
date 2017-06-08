@@ -224,11 +224,10 @@ If we look at...
 
 ** Modifiability
    #+BEGIN_NOTES 
-   migrated parts of existing applications
-   Calculated modifiability
-   Over lifetime of codebases
-   
-#+END_NOTES
+   * migrated parts of existing applications
+   * Calculated modifiability
+   * Over lifetime of codebases
+   #+END_NOTES
    
    #+REVEAL: split
    #+ATTR_HTML: :height 500
